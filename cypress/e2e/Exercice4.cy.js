@@ -1,12 +1,12 @@
 /// <reference types="cypress" />
 
-describe("empty spec", () => {
+describe("changeTheLanguage", () => {
   before(() => {
     cy.visit("https://www.prestashop.com/fr");
     cy.url().should("contain", "/fr");
   });
 
-  it("changeLanguageFRToEng", () => {
+  it("changeLanguageFRToEN", () => {
     cy.get('[class="language"]')
       .first()
       .find('[data-toggle="dropdown"]')
